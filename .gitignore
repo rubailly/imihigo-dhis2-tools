@@ -1,0 +1,8 @@
+.env
+.imihigo-state.json
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
