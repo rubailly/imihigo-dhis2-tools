@@ -1,0 +1,63 @@
+site_name: Imihigo DHIS2 Datasets
+site_description: Eastern Province performance contract datasets for Rwanda — metadata, indicators, and CLI setup tool
+site_url: https://rubailly.github.io/imihigo-dhis2-tools
+repo_url: https://github.com/rubailly/imihigo-dhis2-tools
+repo_name: rubailly/imihigo-dhis2-tools
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Datasets:
+    - Overview: datasets/index.md
+    - Bugesera: datasets/bugesera.md
+    - Gatsibo: datasets/gatsibo.md
+    - Kayonza: datasets/kayonza.md
+    - Kirehe: datasets/kirehe.md
+    - Ngoma: datasets/ngoma.md
+    - Nyagatare: datasets/nyagatare.md
+    - Rwamagana: datasets/rwamagana.md
+  - Data Elements: analysis.md
+  - CLI Reference: cli.md
